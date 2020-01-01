@@ -1,20 +1,20 @@
 <template>
   <div class="task-actions">
-    <el-tooltip class="item" effect="dark" :content="$t('task.refresh-list')" placement="bottom">
+    <a-tooltip class="item" :title="$t('task.refresh-list')" placement="bottom">
       <i @click="onRefreshClick">
         <mo-icon name="refresh" width="14" height="14" :spin="refreshing" />
       </i>
-    </el-tooltip>
-    <el-tooltip class="item" effect="dark" :content="$t('task.resume-all-task')" placement="bottom">
+    </a-tooltip>
+    <a-tooltip class="item" :title="$t('task.resume-all-task')" placement="bottom">
       <i @click="onResumeAllClick">
-        <mo-icon name="task-start-line" width="14" height="14" />
+        <a-icon type="play-circle" :style="{fontSize: '16px'}"/>
       </i>
-    </el-tooltip>
-    <el-tooltip class="item" effect="dark" :content="$t('task.pause-all-task')" placement="bottom">
+    </a-tooltip>
+    <a-tooltip class="item" :title="$t('task.pause-all-task')" placement="bottom">
       <i @click="onPauseAllClick">
-        <mo-icon name="task-pause-line" width="14" height="14" />
+        <a-icon type="pause" :style="{fontSize: '16px'}"/>
       </i>
-    </el-tooltip>
+    </a-tooltip>
     <!-- <el-tooltip class="item" effect="dark" :content="$t('task.delete-selected-tasks')" placement="bottom">
       <i>
         <mo-icon name="delete" width="14" height="14" />

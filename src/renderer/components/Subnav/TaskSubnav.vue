@@ -7,7 +7,7 @@
         :class="[ current === 'active' ? 'active' : '' ]"
       >
         <i class="subnav-icon">
-          <mo-icon name="task-start" width="20" height="20" />
+          <a-icon type="caret-right" />
         </i>
         <span>{{ $t('task.active') }}</span>
       </li>
@@ -16,7 +16,7 @@
         :class="[ current === 'waiting' ? 'active' : '' ]"
       >
         <i class="subnav-icon">
-          <mo-icon name="task-pause" width="20" height="20" />
+          <a-icon type="pause-circle" theme="filled"/>
         </i>
         <span>{{ $t('task.waiting') }}</span>
       </li>
@@ -25,7 +25,7 @@
         :class="[ current === 'stopped' ? 'active' : '' ]"
       >
         <i class="subnav-icon">
-          <mo-icon name="task-stop" width="20" height="20" />
+          <a-icon type="stop" theme="filled"/>
         </i>
         <span>{{ $t('task.stopped') }}</span>
       </li>

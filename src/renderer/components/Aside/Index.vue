@@ -4,18 +4,18 @@
       <mo-logo-mini />
       <ul class="menu top-menu">
         <li @click="nav('/task')" class="non-draggable">
-          <mo-icon name="menu-task" width="20" height="20" />
+          <a-icon type="bars" :style="{fontSize: '30px'}"/>
         </li>
         <li @click="showAddTask()" class="non-draggable">
-          <mo-icon name="menu-add" width="20" height="20" />
+          <a-icon type="plus" :style="{fontSize: '30px'}"/>
         </li>
       </ul>
       <ul class="menu bottom-menu">
         <li @click="nav('/preference')" class="non-draggable">
-          <mo-icon name="menu-preference" width="20" height="20" />
+          <a-icon type="setting" :style="{fontSize: '30px'}"/>
         </li>
         <li @click="showAboutPanel" class="non-draggable">
-          <mo-icon name="menu-about" width="20" height="20" />
+          <a-icon type="question-circle" :style="{fontSize: '30px'}"/>
         </li>
       </ul>
     </div>

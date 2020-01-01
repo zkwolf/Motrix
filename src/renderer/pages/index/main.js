@@ -12,6 +12,8 @@ import store from '@/store'
 import { getLocaleManager } from '@/components/Locale'
 import Icon from '@/components/Icons/Icon'
 import Msg from '@/components/Msg'
+import Antd from 'ant-design-vue'
+import 'ant-design-vue/dist/antd.css'
 
 import '@/components/Theme/Index.scss'
 
@@ -36,6 +38,8 @@ function init (config) {
   Vue.use(Msg, Message, {
     showClose: true
   })
+
+  Vue.use(Antd)
 
   const loading = Loading.service({
     fullscreen: true,
